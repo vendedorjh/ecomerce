@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+    /* Aplica estilos para telas com largura máxima de 768 pixels */
+    .logo {
+        font-size: 3rem;
+        /* Define o tamanho da fonte da classe logo como 3rem */
+    }
+    .botao-menu {
+        display: block;
+        /* Altera a exibição do botão de menu para "block", tornando-o visível */
+    }
+    nav {
+        display: none;
+        /* Inicialmente oculta o elemento <nav> */
+        background-color: #6ca19e;
+        /* Define a cor de fundo do nav */
+        width: 100%;
+        /* Faz o nav ocupar 100% da largura do contêiner pai */
+        top: 60px;
+        /* Posiciona o nav a 46 pixels do topo */
+        position: absolute;
+        /* Define o posicionamento como absoluto */
+    }
+
+    .show-menu nav {
+        display: block;
+        /* Quando a classe show-menu é adicionada, o nav se torna visível */
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* Organiza os itens da lista em coluna */
+    }
+    nav ul li {
+        margin: 1rem 0;
+        /* Define uma margem de 1rem vertical entre os itens da lista */
+        padding: 0;
+        /* Remove o padding dos itens da lista */
+        text-align: center;
+        /* Centraliza o texto dentro dos itens da lista */
+        flex-direction: column;
+        /* (Este estilo não terá efeito aqui, pois 'li' não é um contêiner flexível por padrão) */
+    }
+    .header-bottom-side {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cols-3 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .cols-8{
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+        }
+    .product-name .product-price .rate {
+        overflow: hidden;
+        font-size: 24px;}
+            }

@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    .logo { 
+        font-size: 3rem;  
+    }
+
+    .botao-menu { 
+        display: block;  
+    }
+
+    nav { 
+        display: none;  
+        background-color: #6ca19e;  
+        width: 100%;  
+        top: 60px;  
+        position: absolute;  
+        right: 0;  /* Alinha o nav ao lado direito */
+        z-index: 1000;  /* Garante que o nav fique acima de outros elementos */
+    }
+
+    .show-menu nav { 
+        display: block;  
+    }
+
+    nav ul { 
+        flex-direction: column;  
+        padding: 0;  /* Remove o padding padrão */
+    }
+
+    nav ul li { 
+        margin: 1rem 0;  
+        padding: 0;  
+        text-align: center;  
+    }
+
+    .header-bottom-side {
+        flex-direction: column;
+        align-items: flex-start;  
+        width: 100%;  /* Faz o container ocupar toda a largura */
+        position: relative;  /* Necessário se você tiver elementos posicionados dentro */
+    }
+}

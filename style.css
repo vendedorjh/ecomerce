@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo da largura e altura dos elementos */
+    padding: 0;
+    /* Remove o padding padrão de todos os elementos */
+    margin: 0;
+    /* Remove a margem padrão de todos os elementos */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte do corpo como Arial, com uma fonte alternativa sans-serif */
+    font-weight: bold;
+    /* Define a cor de fundo do corpo como um cinza claro */
+}
+
+/*header*/
+.navbar {
+    background-color: #6ca19e;
+    /* Define a cor de fundo da barra de navegação */
+    padding: 1rem;
+    /* Adiciona espaço interno de 1rem na barra de navegação */
+    position: sticky;
+    /* Mantém a barra de navegação no topo ao rolar a página */
+    z-index: 100;
+    /* Garante que a navbar fique acima de outros elementos */
+    top: 0;
+    box-shadow: 10px 0px 10px #6d997a;
+    /* Adiciona uma sombra ao lado da navbar */
+}
+
+.header-inner-content {
+    max-width: 100%;
+    /* Limita a largura máxima do conteúdo do cabeçalho */
+    margin-left: auto;
+    /* Centraliza o conteúdo à esquerda */
+    margin-right: auto;
+    /* Centraliza o conteúdo à direita */
+}
+
+.logo {
+    color: #ded1b6;
+    /* Define a cor do texto da logo */
+}
+
+.logo span {
+    color: #42282c;
+    /* Define uma cor diferente para partes da logo, provavelmente um subtítulo ou destaque */
+}
+
+.navbar>div {
+    display: flex;
+    /* Usa flexbox para organizar os itens dentro da navbar */
+    justify-content: space-between;
+    /* Distribui os itens com espaço entre eles */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    position: relative;
+    /* Define o posicionamento relativo para elementos filhos */
+}
+
+nav ul {
+    display: flex;
+    /* Exibe a lista de navegação como um flexbox */
+    list-style: none;
+    /* Remove os marcadores da lista */
+    align-items: center;
+    /* Alinha os itens da lista verticalmente ao centro */
+}
+
+nav ul li {
+    color: #42282c;
+    /* Define a cor do texto dos itens da lista */
+    margin-right: 1.5rem;
+    /* Adiciona uma margem à direita dos itens da lista */
+    cursor: pointer;
+    /* Muda o cursor para indicar que o item é clicável */
+}
+
+nav ul li:hover {
+    color: #ded1b6;
+    /* Muda a cor do texto ao passar o mouse sobre o item */
+    transform: translateY(-5px);
+    /* Move o item para cima ao passar o mouse */
+    transition: all 0.9s ease-in-out;
+    /* Define uma transição suave para todas as propriedades */
+    font-weight: bold;
+    /* Torna o texto em negrito ao passar o mouse */
+}
+
+.nav-icon-container {
+    display: flex;
+    /* Usa flexbox para organizar ícones de navegação */
+    align-items: center;
+    /* Alinha os ícones verticalmente ao centro */
+}
+
+.nav-icon-container img {
+    width: 30px;
+    /* Define a largura dos ícones de navegação */
+    cursor: pointer;
+    /* Muda o cursor para indicar que o ícone é clicável */
+}
+
+
+.header-inner-content img:first-child {
+    margin-right: 1rem;
+    /* Adiciona espaço à direita da primeira imagem no conteúdo do cabeçalho */
+}
+
+.botao-menu {
+    display: none;
+    /* Oculta o botão de menu inicialmente */
+}
+
+.header-bottom-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+    background-image: radial-gradient(#e2eee6, #41a29d);
+}
+
+.header-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.header-bottom-side-left p {
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-size: 15pt;
+}
+
+.header-bottom-side-left button {
+    background-color: #6ca19e;
+    color: #ded1b6;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.5s;
+    border-radius: 9999px;
+    font-size: 12pt;
+}
+
+.header-bottom-side-left button:hover {
+    background-color: #42282c;
+}
+
+.header-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom-side-right img {
+    width: 350px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(10px 0px 5px);
+}
+
+main {
+    background-color: #ffffff;
+
+}
+
+.green-background {
+    background-color: #6ca19e;
+}
+
+.page-inner-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cols {
+    display: grid;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+    justify-items: center;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #42282c;
+}
+
+.subtitle-underline {
+
+    width: 100px;
+    height: 5px;
+    background-color: #84abaa;
+    margin: 8px auto 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 16px;
+
+
+}
+
+.product-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rate {
+    color: #41a29d;
+}
+
+.product-price {
+
+    font-size: 2.0rem;
+}
+
+.product-price span {
+    font-size: 1.15rem;
+    color: green;
+
+}
+
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-left: 50px;
+}
+
+.cols-4 img {
+    max-width: 100%;
+}
+
+.cols>* {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cols>*:hover {
+    transform: scale(1.1);
+}
+
+.cols-8 {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+}
+
+.cols-8 img {
+    max-width: 100%;
+}
+.comentarios {
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: space-between;
+    background-color: #84abaa;
+    }
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    padding: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    box-shadow:  0 10px 20px #6d997a;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #e2eee6;
+    max-width: 400px;
+    border: 1px solid #e2eee6;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    color: white;
+    gap: 35rem;
+    }
+
+.download-options>* {
+    margin-right: 2.5rem;
+}
+
+.download-options>p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.download-options>div {
+    display: flex;
+}
+
+.download-options img {
+    cursor: pointer;
+}
+
+.logo-footer {
+    text-align: center;
+}
+.link-footer h2{
+color: #42282c;
+
+}
+.link-footer ul{
+    list-style: none;
+}
+.link-footer li{
+margin-bottom: 0.5rem;
+cursor: pointer;
+}
+.copyright {
+    color: #42282c;
+    padding:  4rem 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+/*cores  PALETAS 
+.color1 { #42282c };  /* Cor primária para texto 
+.color2 { #6ca19e };  /* Cor secundária para fundo 
+.color3 { #84abaa };  /* Terceira cor, possível para outros elementos 
+.color4 { #ded1b6 };  /* Quarta cor, utilizada em textos ou elementos de destaque
+.color5 { #6d997a };  /* Quinta cor, usada em sombras ou detalhes */
